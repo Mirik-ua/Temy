@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <form  action="ip.php" id="form" name="test">
+  <form  action="php/ip.php" id="form" name="test">
     <div class="title">
       <h2>Event Registration Form</h2>
     </div>
@@ -30,8 +30,8 @@
           </select>
         </div>
         <div class="stateBlock">
-          <label for="states">States:</label>
-          <select class="states" name="states">
+          <label for="states">State:</label>
+          <select class="states" name="state">
             <option>Cherkasy Oblast</option>
             <option>Chernihiv Oblast</option>
             <option>Chernivtsi Oblast</option>
@@ -60,7 +60,7 @@
         </div>
         <div class="cityBlock">
           <label for="city">City:</label>
-          <select class="" name="">
+          <select name="city">
             <option>Cherkasy</option>
             <option>Chernihiv</option>
             <option>Chernivtsi</option>
@@ -97,7 +97,7 @@
           <input type="text" name="adress">
       </div>
       <div class="aboutMeBlock">
-        <textarea name="about-me" rows="8" cols="80" maxlength="500" placeholder="About me"></textarea>
+        <textarea name="about" rows="8" cols="80" maxlength="500" placeholder="About me"></textarea>
       </div>
       <div class="buttonBlock">
         <input type="button" id="send" name="submit" value="submit" onclick="valid(document.getElementById('form'))">
